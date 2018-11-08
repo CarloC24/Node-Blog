@@ -47,4 +47,6 @@ server.use('/posts', postRoutes);
 
 const port = process.env.PORT || 9000;
 
-server.listen(port, () => console.log('\n == API Running on Port 9K == \n'));
+server.listen(port, () =>
+  console.log(`\n == API Running on Port ${port} == \n`)
+);
